@@ -1,0 +1,1 @@
+PORT=8083 NODE_ENV=development API_HOST=localhost npm run dev

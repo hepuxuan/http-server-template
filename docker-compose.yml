@@ -1,0 +1,18 @@
+version: "3"
+services:
+  web-proxy:
+    build: ./proxy
+    ports:
+      - "8080:8080"
+  service:
+    build: ./service
+    ports:
+      - "8082:8082"
+  home-page:
+    build: ./webapp-home
+    ports:
+      - "8081:8081"
+  user-page:
+    build: ./webapp-user
+    ports:
+      - "8083:8083"
