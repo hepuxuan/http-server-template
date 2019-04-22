@@ -8,4 +8,3 @@ RUN npm run build
 FROM nginx
 COPY http-template.conf /etc/nginx/conf.d/http-template.conf
 COPY --from=build-stage dist /var/www/home-page/dist
-EXPOSE 8081

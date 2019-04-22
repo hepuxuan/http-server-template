@@ -16,8 +16,6 @@ RUN GIT_TERMINAL_PROMPT=1 go get -d -v ./...
 # Install the package
 RUN go install -v ./...
 
-ENV PORT=8082
-
 # This container exposes port 8080 to the outside world
 EXPOSE 8082
 
